@@ -1,0 +1,4 @@
+requests>=2.31
+PyYAML>=6.0
+PyMySQL>=1.1
+PySide6>=6.5

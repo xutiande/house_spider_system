@@ -1,0 +1,30 @@
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: ""
+  database: ajk_crawl
+
+crawler:
+  qps: 3
+  timeout_s: 20
+  retries: 2
+  interval_ms: 800
+  jitter_ms: 700
+  page_limit: 60
+  verify_ssl: true
+
+# 代理默认关闭；source 支持本地文件路径，或返回 "ip:port" 行的 URL
+proxy:
+  enabled: false
+  source: ""
+  protocol: http
+  username: ""
+  password: ""
+  check_url: "https://api.anjuke.com/"
+  check_concurrency: 10
+  check_timeout_s: 3
+  max_fail: 3
+
+export:
+  dir: exports
